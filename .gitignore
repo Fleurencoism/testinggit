@@ -1,4 +1,10 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+const renderer = ({hours, minutes, seconds, completed}) => {
+  if (completed) {
+    return <Completionist />;
+  } else {
+    return <span>{hours}:{minutes}:{seconds}</span>
+  }
+}# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
